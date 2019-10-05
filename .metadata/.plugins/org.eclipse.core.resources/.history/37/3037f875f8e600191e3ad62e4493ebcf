@@ -1,0 +1,21 @@
+05/10/2019 04:10:31 devpinoyLogger verifyServerTime Test Starts..
+05/10/2019 04:10:32 devpinoyLogger Get the base url
+05/10/2019 04:10:34 devpinoyLogger Get the response from the /api/v1/time
+05/10/2019 04:10:34 devpinoyLogger Get the response code as 200
+05/10/2019 04:10:34 devpinoyLogger Verify the response
+05/10/2019 04:10:34 devpinoyLogger Verify that server time is less than 5 seconds
+05/10/2019 04:10:34 devpinoyLogger VerifyServerTime Test End..
+05/10/2019 04:10:34 devpinoyLogger verifyTickerValueWithInvalidSymbol Test Starts..
+05/10/2019 04:10:34 devpinoyLogger Get the base url
+05/10/2019 04:10:34 devpinoyLogger Added the query parameter to the request as invalid symbol
+05/10/2019 04:10:34 devpinoyLogger Get the response from the /api/v3/ticker/price
+05/10/2019 04:10:34 devpinoyLogger Get the response code as 400
+05/10/2019 04:10:34 devpinoyLogger Verify the response
+05/10/2019 04:10:34 devpinoyLogger VerifyTickerValueWithInvalidSymbol Test End..
+05/10/2019 04:10:34 devpinoyLogger VerifyTickerValueWithValidSymbol Test Starts..
+05/10/2019 04:10:34 devpinoyLogger Get the base url
+05/10/2019 04:10:34 devpinoyLogger Added the query parameter to the request as valid symbol
+05/10/2019 04:10:35 devpinoyLogger Get the response from the /api/v3/ticker/price
+05/10/2019 04:10:35 devpinoyLogger Get the response code as 200
+05/10/2019 04:10:35 devpinoyLogger Verify the response
+05/10/2019 04:10:35 devpinoyLogger VerifyTickerValueWithValidSymbol Test End..

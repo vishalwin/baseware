@@ -1,0 +1,84 @@
+/**
+ * 
+ */
+package com.binance.test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+import java.util.concurrent.TimeUnit;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+
+import io.restassured.*;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import objectHelper.GetApiEndPoints;
+
+
+/**
+ * @author Vishal Gupta 
+ * Verify Check server time
+ * API endpoint: GET /api/v1/time Test assertion: Success only if
+ * server's time is within 5 seconds of client's time
+ */
+public class VerifyServerTime extends GetApiEndPoints {
+	
+	
+	// Load property file
+	@BeforeClass
+	public void loadPropertyFile()
+	{
+		readPropertyFile();
+	}
+	
+	
+	 @Test
+	 public void verifyServerTime() throws Exception
+	 {   
+		 
+	
+	 // Specify the base URL to the RESTful web service
+	 RestAssured.baseURI = baseURI();
+	 
+	 // Get the RequestSpecification of the request that you want to sent
+	 // to the server. The server is specified by the BaseURI that we have
+	 // specified in the above step.
+	 RequestSpecification httpRequest = RestAssured.given();
+	 
+	 // Make a request to the server by specifying the method Type and the method URL.
+	 // This will return the Response from the server. Store the response in a variable.
+	 Response response = httpRequest.request(Method.GET, serverTimeURI());
+	 
+	 // Get the status code
+	 int statusCode=response.getStatusCode();
+	 // Verify the response code is HTTP 200
+	 AssertJUnit.assertEquals(statusCode,200);
+	 
+	 
+	 
+	 boolean flag=true; // flag variable for checking the time if response time is greater than 5 seconds then it is false
+	 if(response.getTime()>5000)
+		 flag=false;
+	 
+	 // Varify that response time is not greater than 5 seconds
+	 AssertJUnit.assertEquals(flag, true);
+	 
+
+
+	 
+	 }
+	
+	 
+	 
+	
+	
+}

@@ -1,0 +1,64 @@
+/**
+ * 
+ */
+package com.binance.test;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import objectHelper.ConvertCurrentTimeToEpoch;
+
+/**
+ * @author Vishal Gupta 
+ * Verify Check server time
+ * API endpoint: GET /api/v1/time Test assertion: Success only if
+ * erver's time is within 5 seconds of client's time
+ */
+public class VerifyServerTime {
+	 @Test
+	 public void verifyServerTime() throws Exception
+	 {   
+		 
+	
+	 // Specify the base URL to the RESTful web service
+	 RestAssured.baseURI = "https://api.binance.com";
+	 
+	 // Get the RequestSpecification of the request that you want to sent
+	 // to the server. The server is specified by the BaseURI that we have
+	 // specified in the above step.
+	 RequestSpecification httpRequest = RestAssured.given();
+	 
+	 // Make a request to the server by specifying the method Type and the method URL.
+	 // This will return the Response from the server. Store the response in a variable.
+	 Response response = httpRequest.request(Method.GET, "/api/v1/time");
+	 
+	 // Now let us print the body of the message to see what response
+	 // we have recieved from the server
+	 String responseBody = response.getBody().asString();
+	 System.out.println(responseBody);
+	 Assert.assertNotNull(responseBody);
+	 
+	 //Unix seconds
+	   long unix_seconds = 1372339860;
+	   //convert seconds to milliseconds
+	   Date date = new Date(unix_seconds*1000L); 
+	   // format of the date
+	   SimpleDateFormat jdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
+	   jdf.setTimeZone(TimeZone.getTimeZone("GMT-4"));
+	   String java_date = jdf.format(date);
+	   System.out.println("\n"+java_date+"\n");
+	 
+	 
+	 }
+	
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.binance.test.VerifyTrickerValueWithValidSymbol&apos; to &apos;VerifyTickerValueWithValidSymbol&apos;&#x0D;&#x0A;- Original project: &apos;Binance&apos;&#x0D;&#x0A;- Original element: &apos;com.binance.test.VerifyTrickerValueWithValidSymbol&apos;&#x0D;&#x0A;- Renamed element: &apos;com.binance.test.VerifyTickerValueWithValidSymbol&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;VerifyTrickerValueWithValidSymbol&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.binance.test{VerifyTrickerValueWithValidSymbol.java[VerifyTrickerValueWithValidSymbol" matchStrategy="1" name="VerifyTickerValueWithValidSymbol" qualified="false" references="true" similarDeclarations="false" stamp="1569576799897" textual="false" version="1.0"/>
+</session>

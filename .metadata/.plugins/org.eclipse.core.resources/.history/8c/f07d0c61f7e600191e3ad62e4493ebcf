@@ -1,0 +1,48 @@
+/**
+ * 
+ */
+package com.binance.test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import objectHelper.GetApiEndPoints;
+
+/**
+ * @author Vishal Gupta Verify ticker value with valid symbol API endpoint: GET
+ *         /api/v3/ticker/price Query the endpoint with valid GET parameter
+ *         "symbol=BTCUSDT" Test assertion: Server responds with HTTP status 200
+ */
+public class VerifyTickerValueWithValidSymbol extends GetApiEndPoints {
+
+	// Load property file
+	@BeforeClass
+	public void loadPropertyFile() {
+		readPropertyFile();
+	}
+
+	@Test
+	public void verifyTickerValue() throws IOException {
+		RestAssured.baseURI = baseURI();
+		RequestSpecification httpRequest = RestAssured.given().queryParam("symbol", "BTCUSDT");
+		Response response = httpRequest.get(getSymbolPriceTickerURI());
+
+		// Get the status code from the Response. In case of
+		// a successfull interaction with the web service, we
+		// should get a status code of 200.
+
+		int statusCode = response.getStatusCode();
+		// Verify the response code is HTTP 200
+		AssertJUnit.assertEquals(statusCode, 200);
+	}
+
+}

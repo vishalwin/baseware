@@ -1,0 +1,4 @@
+Binance.disabledListeners=true
+Binance.outdir=test-output
+Binance.watchResults=true
+eclipse.preferences.version=1

@@ -1,0 +1,92 @@
+/**
+ * 
+ */
+package com.baseware.testCases;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.baseware.pages.LoginPage;
+import com.baseware.pages.TestAppHomePage;
+
+import helperObects.BrowserFactory;
+
+/**
+ * @author Vishal Gupta
+ * 
+ * To verify the application login functionality
+ *
+ */
+public class LoginTest {
+	private String url="E:\\website\\website\\website\\index.html";
+	private String uname="friend";
+	private String pass="mellon";
+	private WebDriver driver;
+	TestAppHomePage home_page;
+	
+	
+	@BeforeClass
+	public void setUp() {
+		System.out.println("*******************");
+		System.out.println("launching Web Browser");
+		System.setProperty("webdriver.chrome.driver","E:\\automationtools\\browsers\\chromedriver.exe");
+		driver=BrowserFactory.startBrowser("chrome", url);
+	}
+			
+	//Verify Login account
+	@Test
+	public void verifyLogin() {
+		
+			
+		//Initialize the login page by using page factory
+		
+		LoginPage login_page=PageFactory.initElements(driver, LoginPage.class);
+		
+		// Clear the user name text field
+
+		login_page.clearUserNameTextField();
+		
+		// Type the user name into user name text field
+		login_page.typeUserName(uname);
+		
+		// Type the password in password text field
+		login_page.typePassword(pass);
+		
+		// Click the submit button
+		login_page.clickSubmitButton();
+		
+		// Instantiate home page after successful login
+	    home_page=PageFactory.initElements(driver, TestAppHomePage.class);
+	}
+	
+	
+	// Tear down the application
+	
+	@AfterClass public void tearDown() 
+	  { 
+		  
+		  
+		  if(driver!=null) {
+			  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+              WebDriverWait wait = new WebDriverWait(driver, 20);
+			  //logout from the home page
+			  home_page.clickLogoutButton();
+			  System.out.println("Closing browser"); 
+			  driver.quit(); }
+		  }
+
+}
+
