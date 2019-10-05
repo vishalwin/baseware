@@ -2723,3 +2723,518 @@
 10:18:39,667 DEBUG devpinoyLogger<strong>{1}</strong>:52 -VerifyTickerValueWithValidSymbol Test End..
 10:18:39,964 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:180 -Connection 0.0.0.0:60276<->99.86.31.175:443 closed
 10:18:39,968 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:180 -Connection 0.0.0.0:60275<->99.86.31.175:443 closed
+13:10:56,098 DEBUG devpinoyLogger<strong>{1}</strong>:34 -verifyServerTime Test Starts..
+13:10:56,653 DEBUG devpinoyLogger<strong>{1}</strong>:38 -Get the base url
+13:10:57,821 DEBUG org.apache.http.impl.conn.BasicClientConnectionManager<strong>{1}</strong>:161 -Get connection for route {s}->https://api.binance.com:443
+13:10:57,908 DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator<strong>{1}</strong>:177 -Connecting to api.binance.com:443
+13:10:58,316 DEBUG org.apache.http.client.protocol.RequestAddCookies<strong>{1}</strong>:123 -CookieSpec selected: ignoreCookies
+13:10:58,316 DEBUG org.apache.http.client.protocol.RequestAuthCache<strong>{1}</strong>:77 -Auth cache not set in the context
+13:10:58,316 DEBUG org.apache.http.client.protocol.RequestTargetAuthentication<strong>{1}</strong>:80 -Target auth state: UNCHALLENGED
+13:10:58,316 DEBUG org.apache.http.client.protocol.RequestProxyAuthentication<strong>{1}</strong>:89 -Proxy auth state: UNCHALLENGED
+13:10:58,316 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:682 -Attempt 1 to execute request
+13:10:58,316 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:274 -Sending request: GET /api/v1/time HTTP/1.1
+13:10:58,316 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "GET /api/v1/time HTTP/1.1[\r][\n]"
+13:10:58,316 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept: */*[\r][\n]"
+13:10:58,316 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Host: api.binance.com[\r][\n]"
+13:10:58,316 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Connection: Keep-Alive[\r][\n]"
+13:10:58,316 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)[\r][\n]"
+13:10:58,316 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:10:58,316 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "[\r][\n]"
+13:10:58,332 DEBUG org.apache.http.headers<strong>{1}</strong>:278 ->> GET /api/v1/time HTTP/1.1
+13:10:58,332 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept: */*
+13:10:58,332 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Host: api.binance.com
+13:10:58,332 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Connection: Keep-Alive
+13:10:58,332 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)
+13:10:58,332 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept-Encoding: gzip,deflate
+13:10:58,785 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "HTTP/1.1 200 OK[\r][\n]"
+13:10:58,785 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Type: application/json;charset=utf-8[\r][\n]"
+13:10:58,785 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Transfer-Encoding: chunked[\r][\n]"
+13:10:58,785 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Connection: keep-alive[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Date: Sat, 05 Oct 2019 07:40:53 GMT[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Server: nginx[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Vary: Accept-Encoding[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-UUID: 21713500-fc23-4eaf-bf74-241ad4b38505[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT: 1[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT-1M: 1[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Xss-Protection: 1; mode=block[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Type-Options: nosniff[\r][\n]"
+13:10:58,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Security-Policy: default-src 'self'[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Security-Policy: default-src 'self'[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-WebKit-CSP: default-src 'self'[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Cache-Control: no-cache, no-store, must-revalidate[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Pragma: no-cache[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Expires: 0[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Encoding: gzip[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Cache: Miss from cloudfront[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Via: 1.1 fc46ede2994db26e671da2a216d4025d.cloudfront.net (CloudFront)[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Pop: DEL54-C4[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Id: vkYtVpp2jKHhegUo3ALMLr4ejYq8PwwSzSn3s1aWon6OR3shZ-ZUfw==[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:10:58,816 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:259 -Receiving response: HTTP/1.1 200 OK
+13:10:58,816 DEBUG org.apache.http.headers<strong>{1}</strong>:262 -<< HTTP/1.1 200 OK
+13:10:58,816 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Type: application/json;charset=utf-8
+13:10:58,816 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Transfer-Encoding: chunked
+13:10:58,816 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Connection: keep-alive
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Date: Sat, 05 Oct 2019 07:40:53 GMT
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Server: nginx
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Vary: Accept-Encoding
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-UUID: 21713500-fc23-4eaf-bf74-241ad4b38505
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT: 1
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT-1M: 1
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Strict-Transport-Security: max-age=31536000; includeSubdomains
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Frame-Options: SAMEORIGIN
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Xss-Protection: 1; mode=block
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Type-Options: nosniff
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Security-Policy: default-src 'self'
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Security-Policy: default-src 'self'
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-WebKit-CSP: default-src 'self'
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Cache-Control: no-cache, no-store, must-revalidate
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Pragma: no-cache
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Expires: 0
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Encoding: gzip
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Cache: Miss from cloudfront
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Via: 1.1 fc46ede2994db26e671da2a216d4025d.cloudfront.net (CloudFront)
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Pop: DEL54-C4
+13:10:58,832 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Id: vkYtVpp2jKHhegUo3ALMLr4ejYq8PwwSzSn3s1aWon6OR3shZ-ZUfw==
+13:10:58,847 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:509 -Connection can be kept alive indefinitely
+13:10:58,863 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:544 -Parsing response as: application/json;charset=utf-8
+13:10:58,863 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "30[\r][\n]"
+13:10:58,863 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*N-*K-[\n]"
+13:10:58,863 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[0xc9][0xcc]MU[0xb2]2457023425670[0xad][0x5][0x0][0xd3][0xcc][\n]"
+13:10:58,878 DEBUG org.apache.http.wire<strong>{1}</strong>:87 - << "j[0x1c][0x0][0x0][0x0]"
+13:10:58,878 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:10:58,878 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "0[\r][\n]"
+13:10:58,878 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:10:58,878 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:547 -Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:10:58,911 DEBUG devpinoyLogger<strong>{1}</strong>:49 -Get the response from the /api/v1/time
+13:10:58,911 DEBUG devpinoyLogger<strong>{1}</strong>:52 -Get the response code as 200
+13:10:58,913 DEBUG devpinoyLogger<strong>{1}</strong>:55 -Verify the response
+13:10:58,913 DEBUG devpinoyLogger<strong>{1}</strong>:57 -Verify that server time is less than 5 seconds
+13:10:58,913 DEBUG devpinoyLogger<strong>{1}</strong>:66 -VerifyServerTime Test End..
+13:10:58,929 DEBUG devpinoyLogger<strong>{1}</strong>:32 -verifyTickerValueWithInvalidSymbol Test Starts..
+13:10:58,929 DEBUG devpinoyLogger<strong>{1}</strong>:34 -Get the base url
+13:10:58,944 DEBUG devpinoyLogger<strong>{1}</strong>:36 -Added the query parameter to the request as invalid symbol
+13:10:58,969 DEBUG org.apache.http.impl.conn.BasicClientConnectionManager<strong>{1}</strong>:161 -Get connection for route {s}->https://api.binance.com:443
+13:10:58,970 DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator<strong>{1}</strong>:177 -Connecting to api.binance.com:443
+13:10:59,067 DEBUG org.apache.http.client.protocol.RequestAddCookies<strong>{1}</strong>:123 -CookieSpec selected: ignoreCookies
+13:10:59,068 DEBUG org.apache.http.client.protocol.RequestAuthCache<strong>{1}</strong>:77 -Auth cache not set in the context
+13:10:59,069 DEBUG org.apache.http.client.protocol.RequestTargetAuthentication<strong>{1}</strong>:80 -Target auth state: UNCHALLENGED
+13:10:59,070 DEBUG org.apache.http.client.protocol.RequestProxyAuthentication<strong>{1}</strong>:89 -Proxy auth state: UNCHALLENGED
+13:10:59,071 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:682 -Attempt 1 to execute request
+13:10:59,072 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:274 -Sending request: GET /api/v3/ticker/price?symbol=INVALID HTTP/1.1
+13:10:59,072 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "GET /api/v3/ticker/price?symbol=INVALID HTTP/1.1[\r][\n]"
+13:10:59,073 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept: */*[\r][\n]"
+13:10:59,074 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Host: api.binance.com[\r][\n]"
+13:10:59,075 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Connection: Keep-Alive[\r][\n]"
+13:10:59,076 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)[\r][\n]"
+13:10:59,077 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:10:59,078 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "[\r][\n]"
+13:10:59,078 DEBUG org.apache.http.headers<strong>{1}</strong>:278 ->> GET /api/v3/ticker/price?symbol=INVALID HTTP/1.1
+13:10:59,080 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept: */*
+13:10:59,080 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Host: api.binance.com
+13:10:59,081 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Connection: Keep-Alive
+13:10:59,082 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)
+13:10:59,083 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept-Encoding: gzip,deflate
+13:10:59,541 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "HTTP/1.1 400 Bad Request[\r][\n]"
+13:10:59,543 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Type: application/json;charset=utf-8[\r][\n]"
+13:10:59,544 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Transfer-Encoding: chunked[\r][\n]"
+13:10:59,546 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Connection: keep-alive[\r][\n]"
+13:10:59,548 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Date: Sat, 05 Oct 2019 07:40:54 GMT[\r][\n]"
+13:10:59,550 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Server: nginx[\r][\n]"
+13:10:59,551 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-UUID: f34936fc-6ed2-410d-8a6d-d47a3cb1dcc5[\r][\n]"
+13:10:59,553 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT: 2[\r][\n]"
+13:10:59,554 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT-1M: 2[\r][\n]"
+13:10:59,555 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+13:10:59,555 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+13:10:59,556 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Xss-Protection: 1; mode=block[\r][\n]"
+13:10:59,557 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Type-Options: nosniff[\r][\n]"
+13:10:59,557 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Security-Policy: default-src 'self'[\r][\n]"
+13:10:59,558 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Security-Policy: default-src 'self'[\r][\n]"
+13:10:59,558 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-WebKit-CSP: default-src 'self'[\r][\n]"
+13:10:59,559 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Cache-Control: no-cache, no-store, must-revalidate[\r][\n]"
+13:10:59,559 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Pragma: no-cache[\r][\n]"
+13:10:59,560 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Expires: 0[\r][\n]"
+13:10:59,560 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Cache: Error from cloudfront[\r][\n]"
+13:10:59,560 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Via: 1.1 5be03d0f2c9efd18df3a07ad2305d5c5.cloudfront.net (CloudFront)[\r][\n]"
+13:10:59,561 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Pop: DEL54-C4[\r][\n]"
+13:10:59,561 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Id: bnAu-0VYmDb5HAT5zPst9P6U2Eu7_l7rOYrg4nHF65XWsVxC_a_wgg==[\r][\n]"
+13:10:59,562 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:10:59,562 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:259 -Receiving response: HTTP/1.1 400 Bad Request
+13:10:59,562 DEBUG org.apache.http.headers<strong>{1}</strong>:262 -<< HTTP/1.1 400 Bad Request
+13:10:59,563 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Type: application/json;charset=utf-8
+13:10:59,563 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Transfer-Encoding: chunked
+13:10:59,563 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Connection: keep-alive
+13:10:59,564 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Date: Sat, 05 Oct 2019 07:40:54 GMT
+13:10:59,564 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Server: nginx
+13:10:59,565 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-UUID: f34936fc-6ed2-410d-8a6d-d47a3cb1dcc5
+13:10:59,565 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT: 2
+13:10:59,565 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT-1M: 2
+13:10:59,566 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Strict-Transport-Security: max-age=31536000; includeSubdomains
+13:10:59,566 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Frame-Options: SAMEORIGIN
+13:10:59,567 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Xss-Protection: 1; mode=block
+13:10:59,567 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Type-Options: nosniff
+13:10:59,567 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Security-Policy: default-src 'self'
+13:10:59,568 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Security-Policy: default-src 'self'
+13:10:59,568 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-WebKit-CSP: default-src 'self'
+13:10:59,568 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Cache-Control: no-cache, no-store, must-revalidate
+13:10:59,569 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Pragma: no-cache
+13:10:59,569 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Expires: 0
+13:10:59,570 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Cache: Error from cloudfront
+13:10:59,570 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Via: 1.1 5be03d0f2c9efd18df3a07ad2305d5c5.cloudfront.net (CloudFront)
+13:10:59,571 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Pop: DEL54-C4
+13:10:59,571 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Id: bnAu-0VYmDb5HAT5zPst9P6U2Eu7_l7rOYrg4nHF65XWsVxC_a_wgg==
+13:10:59,572 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:509 -Connection can be kept alive indefinitely
+13:10:59,573 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:544 -Parsing response as: application/json;charset=utf-8
+13:10:59,574 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:547 -Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:10:59,576 DEBUG devpinoyLogger<strong>{1}</strong>:38 -Get the response from the /api/v3/ticker/price
+13:10:59,577 DEBUG devpinoyLogger<strong>{1}</strong>:40 -Get the response code as 400
+13:10:59,577 DEBUG devpinoyLogger<strong>{1}</strong>:42 -Verify the response
+13:10:59,578 DEBUG devpinoyLogger<strong>{1}</strong>:45 -VerifyTickerValueWithInvalidSymbol Test End..
+13:10:59,586 DEBUG devpinoyLogger<strong>{1}</strong>:33 -VerifyTickerValueWithValidSymbol Test Starts..
+13:10:59,587 DEBUG devpinoyLogger<strong>{1}</strong>:35 -Get the base url
+13:10:59,588 DEBUG devpinoyLogger<strong>{1}</strong>:37 -Added the query parameter to the request as valid symbol
+13:10:59,606 DEBUG org.apache.http.impl.conn.BasicClientConnectionManager<strong>{1}</strong>:161 -Get connection for route {s}->https://api.binance.com:443
+13:10:59,607 DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator<strong>{1}</strong>:177 -Connecting to api.binance.com:443
+13:10:59,699 DEBUG org.apache.http.client.protocol.RequestAddCookies<strong>{1}</strong>:123 -CookieSpec selected: ignoreCookies
+13:10:59,700 DEBUG org.apache.http.client.protocol.RequestAuthCache<strong>{1}</strong>:77 -Auth cache not set in the context
+13:10:59,700 DEBUG org.apache.http.client.protocol.RequestTargetAuthentication<strong>{1}</strong>:80 -Target auth state: UNCHALLENGED
+13:10:59,701 DEBUG org.apache.http.client.protocol.RequestProxyAuthentication<strong>{1}</strong>:89 -Proxy auth state: UNCHALLENGED
+13:10:59,701 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:682 -Attempt 1 to execute request
+13:10:59,702 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:274 -Sending request: GET /api/v3/ticker/price?symbol=BTCUSDT HTTP/1.1
+13:10:59,702 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "GET /api/v3/ticker/price?symbol=BTCUSDT HTTP/1.1[\r][\n]"
+13:10:59,703 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept: */*[\r][\n]"
+13:10:59,703 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Host: api.binance.com[\r][\n]"
+13:10:59,704 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Connection: Keep-Alive[\r][\n]"
+13:10:59,704 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)[\r][\n]"
+13:10:59,705 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:10:59,706 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "[\r][\n]"
+13:10:59,706 DEBUG org.apache.http.headers<strong>{1}</strong>:278 ->> GET /api/v3/ticker/price?symbol=BTCUSDT HTTP/1.1
+13:10:59,706 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept: */*
+13:10:59,707 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Host: api.binance.com
+13:10:59,716 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Connection: Keep-Alive
+13:10:59,717 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)
+13:10:59,717 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept-Encoding: gzip,deflate
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "HTTP/1.1 200 OK[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Type: application/json;charset=utf-8[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Transfer-Encoding: chunked[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Connection: keep-alive[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Date: Sat, 05 Oct 2019 07:40:55 GMT[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Server: nginx[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Vary: Accept-Encoding[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-UUID: 1dd1875f-1fa4-4c73-9aef-38f3646335fb[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT: 3[\r][\n]"
+13:11:00,176 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT-1M: 3[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Xss-Protection: 1; mode=block[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Type-Options: nosniff[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Security-Policy: default-src 'self'[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Security-Policy: default-src 'self'[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-WebKit-CSP: default-src 'self'[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Cache-Control: no-cache, no-store, must-revalidate[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Pragma: no-cache[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Expires: 0[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Encoding: gzip[\r][\n]"
+13:11:00,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Cache: Miss from cloudfront[\r][\n]"
+13:11:00,207 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Via: 1.1 0291a40548d755c9bcbab1bdbfde2185.cloudfront.net (CloudFront)[\r][\n]"
+13:11:00,207 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Pop: DEL54-C4[\r][\n]"
+13:11:00,207 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Id: 5_HK_euZrtyxncTX2QYhXkX4VEshA_JNIaS304ZqWXFGllluwMYQ5Q==[\r][\n]"
+13:11:00,207 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:11:00,207 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:259 -Receiving response: HTTP/1.1 200 OK
+13:11:00,207 DEBUG org.apache.http.headers<strong>{1}</strong>:262 -<< HTTP/1.1 200 OK
+13:11:00,207 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Type: application/json;charset=utf-8
+13:11:00,207 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Transfer-Encoding: chunked
+13:11:00,207 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Connection: keep-alive
+13:11:00,207 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Date: Sat, 05 Oct 2019 07:40:55 GMT
+13:11:00,207 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Server: nginx
+13:11:00,207 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Vary: Accept-Encoding
+13:11:00,207 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-UUID: 1dd1875f-1fa4-4c73-9aef-38f3646335fb
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT: 3
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT-1M: 3
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Strict-Transport-Security: max-age=31536000; includeSubdomains
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Frame-Options: SAMEORIGIN
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Xss-Protection: 1; mode=block
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Type-Options: nosniff
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Security-Policy: default-src 'self'
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Security-Policy: default-src 'self'
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-WebKit-CSP: default-src 'self'
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Cache-Control: no-cache, no-store, must-revalidate
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Pragma: no-cache
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Expires: 0
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Encoding: gzip
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Cache: Miss from cloudfront
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Via: 1.1 0291a40548d755c9bcbab1bdbfde2185.cloudfront.net (CloudFront)
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Pop: DEL54-C4
+13:11:00,222 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Id: 5_HK_euZrtyxncTX2QYhXkX4VEshA_JNIaS304ZqWXFGllluwMYQ5Q==
+13:11:00,222 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:509 -Connection can be kept alive indefinitely
+13:11:00,222 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:544 -Parsing response as: application/json;charset=utf-8
+13:11:00,222 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "3b[\r][\n]"
+13:11:00,222 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*[0xae][0xcc]M[0xca][0xcf]Q[0xb2]Rr[\n]"
+13:11:00,222 DEBUG org.apache.http.wire<strong>{1}</strong>:87 - << "q[0xe][\r]v[0x9]Q[0xd2]Q*([0xca]LN[0x5][0x8a]X[0x18][0x1a][0x1a][0xe9][0x99][0x98][0x19][0x80][0x81]R-[0x0]}[0x14][0xca][0xb3],[0x0][0x0][0x0]"
+13:11:00,222 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:11:00,222 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "0[\r][\n]"
+13:11:00,222 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:11:00,222 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:547 -Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:11:00,222 DEBUG devpinoyLogger<strong>{1}</strong>:39 -Get the response from the /api/v3/ticker/price
+13:11:00,237 DEBUG devpinoyLogger<strong>{1}</strong>:46 -Get the response code as 200
+13:11:00,238 DEBUG devpinoyLogger<strong>{1}</strong>:51 -Verify the response
+13:11:00,238 DEBUG devpinoyLogger<strong>{1}</strong>:52 -VerifyTickerValueWithValidSymbol Test End..
+13:39:36,140 DEBUG devpinoyLogger<strong>{1}</strong>:34 -verifyServerTime Test Starts..
+13:39:37,301 DEBUG devpinoyLogger<strong>{1}</strong>:38 -Get the base url
+13:39:39,300 DEBUG org.apache.http.impl.conn.BasicClientConnectionManager<strong>{1}</strong>:161 -Get connection for route {s}->https://api.binance.com:443
+13:39:39,414 DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator<strong>{1}</strong>:177 -Connecting to api.binance.com:443
+13:39:40,236 DEBUG org.apache.http.client.protocol.RequestAddCookies<strong>{1}</strong>:123 -CookieSpec selected: ignoreCookies
+13:39:40,239 DEBUG org.apache.http.client.protocol.RequestAuthCache<strong>{1}</strong>:77 -Auth cache not set in the context
+13:39:40,240 DEBUG org.apache.http.client.protocol.RequestTargetAuthentication<strong>{1}</strong>:80 -Target auth state: UNCHALLENGED
+13:39:40,241 DEBUG org.apache.http.client.protocol.RequestProxyAuthentication<strong>{1}</strong>:89 -Proxy auth state: UNCHALLENGED
+13:39:40,242 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:682 -Attempt 1 to execute request
+13:39:40,242 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:274 -Sending request: GET /api/v1/time HTTP/1.1
+13:39:40,243 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "GET /api/v1/time HTTP/1.1[\r][\n]"
+13:39:40,245 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept: */*[\r][\n]"
+13:39:40,245 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Host: api.binance.com[\r][\n]"
+13:39:40,246 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Connection: Keep-Alive[\r][\n]"
+13:39:40,246 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)[\r][\n]"
+13:39:40,247 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:39:40,249 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "[\r][\n]"
+13:39:40,250 DEBUG org.apache.http.headers<strong>{1}</strong>:278 ->> GET /api/v1/time HTTP/1.1
+13:39:40,251 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept: */*
+13:39:40,251 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Host: api.binance.com
+13:39:40,252 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Connection: Keep-Alive
+13:39:40,252 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)
+13:39:40,253 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept-Encoding: gzip,deflate
+13:39:40,720 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "HTTP/1.1 200 OK[\r][\n]"
+13:39:40,726 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Type: application/json;charset=utf-8[\r][\n]"
+13:39:40,727 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Transfer-Encoding: chunked[\r][\n]"
+13:39:40,729 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Connection: keep-alive[\r][\n]"
+13:39:40,730 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Date: Sat, 05 Oct 2019 08:09:35 GMT[\r][\n]"
+13:39:40,731 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Server: nginx[\r][\n]"
+13:39:40,733 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Vary: Accept-Encoding[\r][\n]"
+13:39:40,734 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-UUID: c9fb3d64-a1fb-4157-a698-f59f417572a0[\r][\n]"
+13:39:40,735 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT: 1[\r][\n]"
+13:39:40,736 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT-1M: 1[\r][\n]"
+13:39:40,738 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+13:39:40,739 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+13:39:40,740 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Xss-Protection: 1; mode=block[\r][\n]"
+13:39:40,742 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Type-Options: nosniff[\r][\n]"
+13:39:40,744 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Security-Policy: default-src 'self'[\r][\n]"
+13:39:40,745 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Security-Policy: default-src 'self'[\r][\n]"
+13:39:40,746 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-WebKit-CSP: default-src 'self'[\r][\n]"
+13:39:40,746 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Cache-Control: no-cache, no-store, must-revalidate[\r][\n]"
+13:39:40,747 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Pragma: no-cache[\r][\n]"
+13:39:40,747 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Expires: 0[\r][\n]"
+13:39:40,748 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Encoding: gzip[\r][\n]"
+13:39:40,749 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Cache: Miss from cloudfront[\r][\n]"
+13:39:40,749 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Via: 1.1 3d2634e41e30685d865dd0093f636704.cloudfront.net (CloudFront)[\r][\n]"
+13:39:40,750 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Pop: DEL54-C3[\r][\n]"
+13:39:40,750 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Id: akoTz12F2gOBMSP-pViRReuypp3F8Ks2HqIhIlvIPRMJ7o2_0sPAjA==[\r][\n]"
+13:39:40,751 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:39:40,752 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:259 -Receiving response: HTTP/1.1 200 OK
+13:39:40,753 DEBUG org.apache.http.headers<strong>{1}</strong>:262 -<< HTTP/1.1 200 OK
+13:39:40,754 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Type: application/json;charset=utf-8
+13:39:40,754 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Transfer-Encoding: chunked
+13:39:40,755 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Connection: keep-alive
+13:39:40,756 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Date: Sat, 05 Oct 2019 08:09:35 GMT
+13:39:40,756 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Server: nginx
+13:39:40,757 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Vary: Accept-Encoding
+13:39:40,758 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-UUID: c9fb3d64-a1fb-4157-a698-f59f417572a0
+13:39:40,758 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT: 1
+13:39:40,759 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT-1M: 1
+13:39:40,759 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Strict-Transport-Security: max-age=31536000; includeSubdomains
+13:39:40,760 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Frame-Options: SAMEORIGIN
+13:39:40,760 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Xss-Protection: 1; mode=block
+13:39:40,761 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Type-Options: nosniff
+13:39:40,761 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Security-Policy: default-src 'self'
+13:39:40,761 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Security-Policy: default-src 'self'
+13:39:40,762 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-WebKit-CSP: default-src 'self'
+13:39:40,763 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Cache-Control: no-cache, no-store, must-revalidate
+13:39:40,763 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Pragma: no-cache
+13:39:40,764 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Expires: 0
+13:39:40,764 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Encoding: gzip
+13:39:40,764 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Cache: Miss from cloudfront
+13:39:40,765 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Via: 1.1 3d2634e41e30685d865dd0093f636704.cloudfront.net (CloudFront)
+13:39:40,765 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Pop: DEL54-C3
+13:39:40,766 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Id: akoTz12F2gOBMSP-pViRReuypp3F8Ks2HqIhIlvIPRMJ7o2_0sPAjA==
+13:39:40,795 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:509 -Connection can be kept alive indefinitely
+13:39:40,820 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:544 -Parsing response as: application/json;charset=utf-8
+13:39:40,822 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "30[\r][\n]"
+13:39:40,825 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*N-*K-[\n]"
+13:39:40,826 DEBUG org.apache.http.wire<strong>{1}</strong>:87 - << "[0xc9][0xcc]MU[0xb2]2457023[0xb2]4753[0xb2][0xa8][0x5][0x0]'[0x6][0x9c]*[0x1c][0x0][0x0][0x0]"
+13:39:40,828 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:39:40,829 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "0[\r][\n]"
+13:39:40,830 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:39:40,832 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:547 -Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:39:40,859 DEBUG devpinoyLogger<strong>{1}</strong>:49 -Get the response from the /api/v1/time
+13:39:40,860 DEBUG devpinoyLogger<strong>{1}</strong>:52 -Get the response code as 200
+13:39:40,863 DEBUG devpinoyLogger<strong>{1}</strong>:55 -Verify the response
+13:39:40,863 DEBUG devpinoyLogger<strong>{1}</strong>:57 -Verify that server time is less than 5 seconds
+13:39:40,864 DEBUG devpinoyLogger<strong>{1}</strong>:66 -VerifyServerTime Test End..
+13:39:40,880 DEBUG devpinoyLogger<strong>{1}</strong>:32 -verifyTickerValueWithInvalidSymbol Test Starts..
+13:39:40,881 DEBUG devpinoyLogger<strong>{1}</strong>:34 -Get the base url
+13:39:40,894 DEBUG devpinoyLogger<strong>{1}</strong>:36 -Added the query parameter to the request as invalid symbol
+13:39:40,931 DEBUG org.apache.http.impl.conn.BasicClientConnectionManager<strong>{1}</strong>:161 -Get connection for route {s}->https://api.binance.com:443
+13:39:40,932 DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator<strong>{1}</strong>:177 -Connecting to api.binance.com:443
+13:39:50,178 DEBUG org.apache.http.client.protocol.RequestAddCookies<strong>{1}</strong>:123 -CookieSpec selected: ignoreCookies
+13:39:50,179 DEBUG org.apache.http.client.protocol.RequestAuthCache<strong>{1}</strong>:77 -Auth cache not set in the context
+13:39:50,180 DEBUG org.apache.http.client.protocol.RequestTargetAuthentication<strong>{1}</strong>:80 -Target auth state: UNCHALLENGED
+13:39:50,181 DEBUG org.apache.http.client.protocol.RequestProxyAuthentication<strong>{1}</strong>:89 -Proxy auth state: UNCHALLENGED
+13:39:50,182 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:682 -Attempt 1 to execute request
+13:39:50,183 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:274 -Sending request: GET /api/v3/ticker/price?symbol=INVALID HTTP/1.1
+13:39:50,184 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "GET /api/v3/ticker/price?symbol=INVALID HTTP/1.1[\r][\n]"
+13:39:50,186 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept: */*[\r][\n]"
+13:39:50,187 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Host: api.binance.com[\r][\n]"
+13:39:50,188 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Connection: Keep-Alive[\r][\n]"
+13:39:50,190 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)[\r][\n]"
+13:39:50,191 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:39:50,192 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "[\r][\n]"
+13:39:50,193 DEBUG org.apache.http.headers<strong>{1}</strong>:278 ->> GET /api/v3/ticker/price?symbol=INVALID HTTP/1.1
+13:39:50,194 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept: */*
+13:39:50,195 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Host: api.binance.com
+13:39:50,196 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Connection: Keep-Alive
+13:39:50,197 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)
+13:39:50,198 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept-Encoding: gzip,deflate
+13:39:50,373 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "HTTP/1.1 400 Bad Request[\r][\n]"
+13:39:50,376 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Type: application/json;charset=utf-8[\r][\n]"
+13:39:50,378 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Transfer-Encoding: chunked[\r][\n]"
+13:39:50,379 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Connection: keep-alive[\r][\n]"
+13:39:50,380 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Date: Sat, 05 Oct 2019 08:09:45 GMT[\r][\n]"
+13:39:50,382 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Server: nginx[\r][\n]"
+13:39:50,384 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-UUID: e1399365-53e2-4188-9af5-5ebf16fb1f7a[\r][\n]"
+13:39:50,386 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT: 2[\r][\n]"
+13:39:50,388 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT-1M: 2[\r][\n]"
+13:39:50,389 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+13:39:50,391 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+13:39:50,393 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Xss-Protection: 1; mode=block[\r][\n]"
+13:39:50,395 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Type-Options: nosniff[\r][\n]"
+13:39:50,396 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Security-Policy: default-src 'self'[\r][\n]"
+13:39:50,397 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Security-Policy: default-src 'self'[\r][\n]"
+13:39:50,399 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-WebKit-CSP: default-src 'self'[\r][\n]"
+13:39:50,400 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Cache-Control: no-cache, no-store, must-revalidate[\r][\n]"
+13:39:50,402 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Pragma: no-cache[\r][\n]"
+13:39:50,403 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Expires: 0[\r][\n]"
+13:39:50,404 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Cache: Error from cloudfront[\r][\n]"
+13:39:50,405 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Via: 1.1 b3adce5d54380d50df805838e1b2b81e.cloudfront.net (CloudFront)[\r][\n]"
+13:39:50,406 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Pop: DEL54-C3[\r][\n]"
+13:39:50,406 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Id: 6d3NsE5NkMsZdOwUZdQATxD_rzsDkVFBWaCxx44M9CYsmkB3_iqDWQ==[\r][\n]"
+13:39:50,407 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:39:50,407 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:259 -Receiving response: HTTP/1.1 400 Bad Request
+13:39:50,408 DEBUG org.apache.http.headers<strong>{1}</strong>:262 -<< HTTP/1.1 400 Bad Request
+13:39:50,408 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Type: application/json;charset=utf-8
+13:39:50,409 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Transfer-Encoding: chunked
+13:39:50,409 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Connection: keep-alive
+13:39:50,409 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Date: Sat, 05 Oct 2019 08:09:45 GMT
+13:39:50,410 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Server: nginx
+13:39:50,410 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-UUID: e1399365-53e2-4188-9af5-5ebf16fb1f7a
+13:39:50,411 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT: 2
+13:39:50,411 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT-1M: 2
+13:39:50,412 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Strict-Transport-Security: max-age=31536000; includeSubdomains
+13:39:50,412 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Frame-Options: SAMEORIGIN
+13:39:50,413 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Xss-Protection: 1; mode=block
+13:39:50,413 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Type-Options: nosniff
+13:39:50,414 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Security-Policy: default-src 'self'
+13:39:50,415 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Security-Policy: default-src 'self'
+13:39:50,415 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-WebKit-CSP: default-src 'self'
+13:39:50,416 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Cache-Control: no-cache, no-store, must-revalidate
+13:39:50,416 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Pragma: no-cache
+13:39:50,417 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Expires: 0
+13:39:50,417 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Cache: Error from cloudfront
+13:39:50,418 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Via: 1.1 b3adce5d54380d50df805838e1b2b81e.cloudfront.net (CloudFront)
+13:39:50,419 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Pop: DEL54-C3
+13:39:50,419 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Id: 6d3NsE5NkMsZdOwUZdQATxD_rzsDkVFBWaCxx44M9CYsmkB3_iqDWQ==
+13:39:50,420 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:509 -Connection can be kept alive indefinitely
+13:39:50,421 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:544 -Parsing response as: application/json;charset=utf-8
+13:39:50,422 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:547 -Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:39:50,424 DEBUG devpinoyLogger<strong>{1}</strong>:38 -Get the response from the /api/v3/ticker/price
+13:39:50,425 DEBUG devpinoyLogger<strong>{1}</strong>:40 -Get the response code as 400
+13:39:50,425 DEBUG devpinoyLogger<strong>{1}</strong>:42 -Verify the response
+13:39:50,426 DEBUG devpinoyLogger<strong>{1}</strong>:45 -VerifyTickerValueWithInvalidSymbol Test End..
+13:39:50,440 DEBUG devpinoyLogger<strong>{1}</strong>:33 -VerifyTickerValueWithValidSymbol Test Starts..
+13:39:50,441 DEBUG devpinoyLogger<strong>{1}</strong>:35 -Get the base url
+13:39:50,442 DEBUG devpinoyLogger<strong>{1}</strong>:37 -Added the query parameter to the request as valid symbol
+13:39:50,462 DEBUG org.apache.http.impl.conn.BasicClientConnectionManager<strong>{1}</strong>:161 -Get connection for route {s}->https://api.binance.com:443
+13:39:50,462 DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator<strong>{1}</strong>:177 -Connecting to api.binance.com:443
+13:39:50,555 DEBUG org.apache.http.client.protocol.RequestAddCookies<strong>{1}</strong>:123 -CookieSpec selected: ignoreCookies
+13:39:50,555 DEBUG org.apache.http.client.protocol.RequestAuthCache<strong>{1}</strong>:77 -Auth cache not set in the context
+13:39:50,556 DEBUG org.apache.http.client.protocol.RequestTargetAuthentication<strong>{1}</strong>:80 -Target auth state: UNCHALLENGED
+13:39:50,556 DEBUG org.apache.http.client.protocol.RequestProxyAuthentication<strong>{1}</strong>:89 -Proxy auth state: UNCHALLENGED
+13:39:50,557 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:682 -Attempt 1 to execute request
+13:39:50,557 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:274 -Sending request: GET /api/v3/ticker/price?symbol=BTCUSDT HTTP/1.1
+13:39:50,557 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "GET /api/v3/ticker/price?symbol=BTCUSDT HTTP/1.1[\r][\n]"
+13:39:50,558 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept: */*[\r][\n]"
+13:39:50,558 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Host: api.binance.com[\r][\n]"
+13:39:50,559 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Connection: Keep-Alive[\r][\n]"
+13:39:50,559 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)[\r][\n]"
+13:39:50,559 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:39:50,560 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - >> "[\r][\n]"
+13:39:50,560 DEBUG org.apache.http.headers<strong>{1}</strong>:278 ->> GET /api/v3/ticker/price?symbol=BTCUSDT HTTP/1.1
+13:39:50,561 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept: */*
+13:39:50,561 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Host: api.binance.com
+13:39:50,561 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Connection: Keep-Alive
+13:39:50,571 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> User-Agent: Apache-HttpClient/4.5.3 (Java/12.0.1)
+13:39:50,571 DEBUG org.apache.http.headers<strong>{1}</strong>:281 ->> Accept-Encoding: gzip,deflate
+13:39:50,744 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "HTTP/1.1 200 OK[\r][\n]"
+13:39:50,747 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Type: application/json;charset=utf-8[\r][\n]"
+13:39:50,750 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Transfer-Encoding: chunked[\r][\n]"
+13:39:50,753 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Connection: keep-alive[\r][\n]"
+13:39:50,755 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Date: Sat, 05 Oct 2019 08:09:45 GMT[\r][\n]"
+13:39:50,757 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Server: nginx[\r][\n]"
+13:39:50,758 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Vary: Accept-Encoding[\r][\n]"
+13:39:50,760 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-UUID: 21713500-fc23-4eaf-bf74-241ad4b38505[\r][\n]"
+13:39:50,761 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT: 3[\r][\n]"
+13:39:50,763 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-MBX-USED-WEIGHT-1M: 3[\r][\n]"
+13:39:50,764 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+13:39:50,765 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+13:39:50,766 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Xss-Protection: 1; mode=block[\r][\n]"
+13:39:50,767 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Type-Options: nosniff[\r][\n]"
+13:39:50,768 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Security-Policy: default-src 'self'[\r][\n]"
+13:39:50,769 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Content-Security-Policy: default-src 'self'[\r][\n]"
+13:39:50,769 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-WebKit-CSP: default-src 'self'[\r][\n]"
+13:39:50,770 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Cache-Control: no-cache, no-store, must-revalidate[\r][\n]"
+13:39:50,771 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Pragma: no-cache[\r][\n]"
+13:39:50,772 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Expires: 0[\r][\n]"
+13:39:50,773 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Content-Encoding: gzip[\r][\n]"
+13:39:50,774 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Cache: Miss from cloudfront[\r][\n]"
+13:39:50,775 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "Via: 1.1 b3922a5f4bf6a4cb6f47f868bfe33169.cloudfront.net (CloudFront)[\r][\n]"
+13:39:50,777 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Pop: DEL54-C3[\r][\n]"
+13:39:50,778 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "X-Amz-Cf-Id: HL2Pu9OQGaAia8pWLE2BRQfHmQbg57zkvEZT_wA7XBPRpCsG2ZwnYQ==[\r][\n]"
+13:39:50,778 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:39:50,780 DEBUG org.apache.http.impl.conn.DefaultClientConnection<strong>{1}</strong>:259 -Receiving response: HTTP/1.1 200 OK
+13:39:50,780 DEBUG org.apache.http.headers<strong>{1}</strong>:262 -<< HTTP/1.1 200 OK
+13:39:50,781 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Type: application/json;charset=utf-8
+13:39:50,782 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Transfer-Encoding: chunked
+13:39:50,782 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Connection: keep-alive
+13:39:50,783 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Date: Sat, 05 Oct 2019 08:09:45 GMT
+13:39:50,783 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Server: nginx
+13:39:50,784 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Vary: Accept-Encoding
+13:39:50,785 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-UUID: 21713500-fc23-4eaf-bf74-241ad4b38505
+13:39:50,786 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT: 3
+13:39:50,787 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-MBX-USED-WEIGHT-1M: 3
+13:39:50,787 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Strict-Transport-Security: max-age=31536000; includeSubdomains
+13:39:50,788 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Frame-Options: SAMEORIGIN
+13:39:50,789 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Xss-Protection: 1; mode=block
+13:39:50,790 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Type-Options: nosniff
+13:39:50,791 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Security-Policy: default-src 'self'
+13:39:50,792 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Content-Security-Policy: default-src 'self'
+13:39:50,792 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-WebKit-CSP: default-src 'self'
+13:39:50,793 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Cache-Control: no-cache, no-store, must-revalidate
+13:39:50,794 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Pragma: no-cache
+13:39:50,794 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Expires: 0
+13:39:50,795 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Content-Encoding: gzip
+13:39:50,796 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Cache: Miss from cloudfront
+13:39:50,797 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< Via: 1.1 b3922a5f4bf6a4cb6f47f868bfe33169.cloudfront.net (CloudFront)
+13:39:50,797 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Pop: DEL54-C3
+13:39:50,798 DEBUG org.apache.http.headers<strong>{1}</strong>:265 -<< X-Amz-Cf-Id: HL2Pu9OQGaAia8pWLE2BRQfHmQbg57zkvEZT_wA7XBPRpCsG2ZwnYQ==
+13:39:50,799 DEBUG org.apache.http.impl.client.DefaultHttpClient<strong>{1}</strong>:509 -Connection can be kept alive indefinitely
+13:39:50,800 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:544 -Parsing response as: application/json;charset=utf-8
+13:39:50,800 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "3b[\r][\n]"
+13:39:50,801 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*[0xae][0xcc]M[0xca][0xcf]Q[0xb2]Rr[\n]"
+13:39:50,801 DEBUG org.apache.http.wire<strong>{1}</strong>:87 - << "q[0xe][\r]v[0x9]Q[0xd2]Q*([0xca]LN[0x5][0x8a]X[0x18][0x1a][0x98][0xea][0x19][0x98][0x19][0x80][0x81]R-[0x0][\r][0x84]/[0x13],[0x0][0x0][0x0]"
+13:39:50,802 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:39:50,802 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "0[\r][\n]"
+13:39:50,803 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - << "[\r][\n]"
+13:39:50,803 DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder<strong>{1}</strong>:547 -Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:39:50,804 DEBUG devpinoyLogger<strong>{1}</strong>:39 -Get the response from the /api/v3/ticker/price
+13:39:50,805 DEBUG devpinoyLogger<strong>{1}</strong>:46 -Get the response code as 200
+13:39:50,805 DEBUG devpinoyLogger<strong>{1}</strong>:51 -Verify the response
+13:39:50,806 DEBUG devpinoyLogger<strong>{1}</strong>:52 -VerifyTickerValueWithValidSymbol Test End..

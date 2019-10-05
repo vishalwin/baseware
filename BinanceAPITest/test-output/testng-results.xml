@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-05T10:18:34 IST" name="Default suite" finished-at="2019-10-05T10:18:39 IST" duration-ms="5051">
+  <suite started-at="2019-10-05T13:39:35 IST" name="Default suite" finished-at="2019-10-05T13:39:50 IST" duration-ms="15022">
     <groups>
     </groups>
-    <test started-at="2019-10-05T10:18:34 IST" name="Default test" finished-at="2019-10-05T10:18:39 IST" duration-ms="5051">
+    <test started-at="2019-10-05T13:39:35 IST" name="Default test" finished-at="2019-10-05T13:39:50 IST" duration-ms="15022">
       <class name="com.binance.test.VerifyServerTime">
-        <test-method is-config="true" signature="loadPropertyFile()[pri:0, instance:com.binance.test.VerifyServerTime@1e730495]" started-at="2019-10-05T10:18:34 IST" name="loadPropertyFile" finished-at="2019-10-05T10:18:34 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="loadPropertyFile()[pri:0, instance:com.binance.test.VerifyServerTime@1e730495]" started-at="2019-10-05T13:39:35 IST" name="loadPropertyFile" finished-at="2019-10-05T13:39:35 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPropertyFile -->
-        <test-method signature="verifyServerTime()[pri:0, instance:com.binance.test.VerifyServerTime@1e730495]" started-at="2019-10-05T10:18:34 IST" name="verifyServerTime" finished-at="2019-10-05T10:18:38 IST" duration-ms="4148" status="PASS">
+        <test-method signature="verifyServerTime()[pri:0, instance:com.binance.test.VerifyServerTime@1e730495]" started-at="2019-10-05T13:39:35 IST" name="verifyServerTime" finished-at="2019-10-05T13:39:40 IST" duration-ms="4999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyServerTime -->
       </class> <!-- com.binance.test.VerifyServerTime -->
       <class name="com.binance.test.VerifyTickerValueWithInvalidSymbol">
-        <test-method is-config="true" signature="loadPropertyFile()[pri:0, instance:com.binance.test.VerifyTickerValueWithInvalidSymbol@7d3a22a9]" started-at="2019-10-05T10:18:38 IST" name="loadPropertyFile" finished-at="2019-10-05T10:18:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loadPropertyFile()[pri:0, instance:com.binance.test.VerifyTickerValueWithInvalidSymbol@7d3a22a9]" started-at="2019-10-05T13:39:40 IST" name="loadPropertyFile" finished-at="2019-10-05T13:39:40 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPropertyFile -->
-        <test-method signature="verifyTickerValueWithInvalidSymbol()[pri:0, instance:com.binance.test.VerifyTickerValueWithInvalidSymbol@7d3a22a9]" started-at="2019-10-05T10:18:38 IST" name="verifyTickerValueWithInvalidSymbol" finished-at="2019-10-05T10:18:39 IST" duration-ms="376" status="PASS">
+        <test-method signature="verifyTickerValueWithInvalidSymbol()[pri:0, instance:com.binance.test.VerifyTickerValueWithInvalidSymbol@7d3a22a9]" started-at="2019-10-05T13:39:40 IST" name="verifyTickerValueWithInvalidSymbol" finished-at="2019-10-05T13:39:50 IST" duration-ms="9549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTickerValueWithInvalidSymbol -->
       </class> <!-- com.binance.test.VerifyTickerValueWithInvalidSymbol -->
       <class name="com.binance.test.VerifyTickerValueWithValidSymbol">
-        <test-method is-config="true" signature="loadPropertyFile()[pri:0, instance:com.binance.test.VerifyTickerValueWithValidSymbol@1d082e88]" started-at="2019-10-05T10:18:39 IST" name="loadPropertyFile" finished-at="2019-10-05T10:18:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loadPropertyFile()[pri:0, instance:com.binance.test.VerifyTickerValueWithValidSymbol@1d082e88]" started-at="2019-10-05T13:39:50 IST" name="loadPropertyFile" finished-at="2019-10-05T13:39:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPropertyFile -->
-        <test-method signature="verifyTickerValue()[pri:0, instance:com.binance.test.VerifyTickerValueWithValidSymbol@1d082e88]" started-at="2019-10-05T10:18:39 IST" name="verifyTickerValue" finished-at="2019-10-05T10:18:39 IST" duration-ms="377" status="PASS">
+        <test-method signature="verifyTickerValue()[pri:0, instance:com.binance.test.VerifyTickerValueWithValidSymbol@1d082e88]" started-at="2019-10-05T13:39:50 IST" name="verifyTickerValue" finished-at="2019-10-05T13:39:50 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTickerValue -->

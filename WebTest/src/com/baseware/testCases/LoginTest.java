@@ -4,10 +4,14 @@
 package com.baseware.testCases;
 
 import org.testng.annotations.Test;
+
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -25,7 +29,7 @@ import helperObects.BrowserFactory;
  */
 public class LoginTest {
 	private String url = "E:\\website\\website\\website\\index.html";
-	
+
 	private WebDriver driver;
 	TestAppHomePage home_page;
 
@@ -58,9 +62,15 @@ public class LoginTest {
 
 		// Click the submit button
 		login_page.clickSubmitButton();
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 		// Instantiate home page after successful login
 		home_page = PageFactory.initElements(driver, TestAppHomePage.class);
+
+		// Verify that user is on home page after successfully logging into the
+		// application
+		Assert.assertEquals(home_page.getLogoutButtonText(), "Logout");
+
 	}
 
 	// Tear down the application

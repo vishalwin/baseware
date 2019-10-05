@@ -3,6 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.binance.test.VerifyTickerValueWithValidSymbol">
+        <methods>
+          <include name="verifyTickerValue"/>
+          <include name="loadPropertyFile"/>
+        </methods>
+      </class> <!-- com.binance.test.VerifyTickerValueWithValidSymbol -->
+      <class name="com.binance.test.VerifyTickerValueWithInvalidSymbol">
+        <methods>
+          <include name="verifyTickerValueWithInvalidSymbol"/>
+          <include name="loadPropertyFile"/>
+        </methods>
+      </class> <!-- com.binance.test.VerifyTickerValueWithInvalidSymbol -->
       <class name="com.binance.test.VerifyServerTime">
         <methods>
           <include name="verifyServerTime"/>
