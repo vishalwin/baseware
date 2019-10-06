@@ -13,13 +13,15 @@ import org.testng.annotations.BeforeClass;
 import dataprovider.TestDataProvider;
 import com.baseware.pages.LoginPage;
 import com.baseware.pages.TestAppHomePage;
+import com.baseware.testBase.TestBase;
+
 import helperObects.BrowserFactory;
 
 /**
  * @author Vishal Gupta To verify unauthorized user is not able to login
  *
  */
-public class InvalidLoginTest {
+public class InvalidLoginTest extends TestBase {
 
 	private String url = "E:\\website\\website\\website\\index.html";
 	private WebDriver driver;

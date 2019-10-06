@@ -20,6 +20,7 @@ import com.baseware.helper.assertion.VerificationHelper;
 import com.baseware.helper.wait.WaitHelper;
 import com.baseware.pages.LoginPage;
 import com.baseware.pages.TestAppHomePage;
+import com.baseware.testBase.TestBase;
 
 import dataprovider.TestDataProvider;
 import helperObects.BrowserFactory;
@@ -30,7 +31,7 @@ import helperObects.BrowserFactory;
  *         To verify the application login functionality
  *
  */
-public class LoginTest {
+public class LoginTest extends TestBase {
 	private String url = "E:\\website\\website\\website\\index.html";
 
 	private WebDriver driver;
