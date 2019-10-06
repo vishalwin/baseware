@@ -79,8 +79,8 @@ public class LoginTest {
 
 		// Verify that user is on home page after successfully logging into the
 		// application
-		new AsertHelper().verifyText(home_page.getLogoutButtonText(), "Logout");
-		//Assert.assertEquals(home_page.getLogoutButtonText(), "Logout");
+		//new AsertHelper().verifyText(home_page.getLogoutButtonText(), "Logodfdfdut1");
+		Assert.assertEquals(home_page.getLogoutButtonText(), "Logout");
 
 	}
 

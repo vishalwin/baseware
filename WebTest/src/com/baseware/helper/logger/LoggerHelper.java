@@ -14,7 +14,7 @@ public static Logger getLogger(Class cls) {
 	if(root) {
 		return Logger.getLogger(cls);
 	}
-	PropertyConfigurator.configure(ResourceHelper.getResourcePath("/WebTest/src/resources/configfile/log4j.properties")) ;
+	PropertyConfigurator.configure(ResourceHelper.getResourcePath("/src/resources/configfile/log4j.properties")) ;
 	root=true;
 	return Logger.getLogger(cls);
 	

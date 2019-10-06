@@ -22,9 +22,9 @@ public class AsertHelper {
 	 * @param s2
 	 */
 	
-	public static void verifyText(String s1, String s2){
+	public  void verifyText(String s1, String s2){
 		log.info("veryfing test: "+ s1 + " with "+ s2);
-		Assert.assertEquals(s1, s1);
+		 Assert.assertEquals(s1, s1);
 	}
 	
 	/**
