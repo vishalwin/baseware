@@ -1,21 +1,21 @@
 Hi Sir,
 Please find attached work as eclipse-workspace.rar file.  It contains two folders V.I.Z. BinanceAPITest and WebTest which are solutions to the assignment provided to me.  Please find the details as mentioned below:
-1. WebTest folder contains the framework where I Implemented the†one successful†and†one unsuccessful login test†against the provided test website.
+1. WebTest folder contains the framework where I Implemented the¬†one successful¬†and¬†one unsuccessful login test¬†against the provided test website.
 2. BinanceAPITest folder contains the framework where I Implemented a simple test suite for Binance API covering some public endpoints.
-Description : WebTest ñ Itís a page object model framework.  It is divided into four packages :
-i. ìcom.baseware.pagesî containing pages representing each page of the provided application and respective page elements and method behaviours of the page.
-ii. ìcom.baseware.testCasesî containing test cases which where TestNG assertions are being used for verifications. TestNG is also used as data provider for test cases.
-iii. ìdataproviderî contains the TestDataProvider class which is providing data to the test cases.
-iv. ìhelperObectsî contains the BrowserFactory class which is being used for initializing the web browsers. 
+Description : WebTest ‚Äì It‚Äôs a page object model framework.  It is divided into four packages :
+i. ‚Äúcom.baseware.pages‚Äù containing pages representing each page of the provided application and respective page elements and method behaviours of the page.
+ii. ‚Äúcom.baseware.testCases‚Äù containing test cases which where TestNG assertions are being used for verifications. TestNG is also used as data provider for test cases.
+iii. ‚Äúdataprovider‚Äù contains the TestDataProvider class which is providing data to the test cases.
+iv. ‚ÄúhelperObects‚Äù contains the BrowserFactory class which is being used for initializing the web browsers. 
 v. testng.xml is used to execute the suite
 
-Description : BinanceAPITestñ Itís is divided into three packages :
-i. ìcom.binance.testî it contains three test cases V.I.Z. VerifyServerTime, VerifyTickerValueWithInvalidSymbol and VerifyTickerValueWithValidSymbol which are automating GET /api/v1/time, GET /api/v3/ticker/price with invalid symbol as request parameter and /api/v3/ticker/price with valid symbol as request parameter.
-I used Rest Assured, TestNG and Log4j and Properties file for providing various URI inorder to automate the applicationís end point dynamically.
-ii. ìobjectHelperî , this package contains the GetApiEndPoint class which is providing the API endpoints to the test cases dynamically.
-iii. ìresourceî it contains ìconfig.propertiesî file which is acts as a repository of the API end points for the applicattion and can be used to accommodate more API end points in future
+Description : BinanceAPITest‚Äì It‚Äôs is divided into three packages :
+i. ‚Äúcom.binance.test‚Äù it contains three test cases V.I.Z. VerifyServerTime, VerifyTickerValueWithInvalidSymbol and VerifyTickerValueWithValidSymbol which are automating GET /api/v1/time, GET /api/v3/ticker/price with invalid symbol as request parameter and /api/v3/ticker/price with valid symbol as request parameter.
+I used Rest Assured, TestNG and Log4j and Properties file for providing various URI inorder to automate the application‚Äôs end point dynamically.
+ii. ‚ÄúobjectHelper‚Äù , this package contains the GetApiEndPoint class which is providing the API endpoints to the test cases dynamically.
+iii. ‚Äúresource‚Äù it contains ‚Äúconfig.properties‚Äù file which is acts as a repository of the API end points for the applicattion and can be used to accommodate more API end points in future
 iv. Manual.log file can used used to read the logs generaged from log4j framework in order to debug testing framework as and when required.
 v. testng.xml is used for execution of the test suite.
 
 
-
+Thanks
