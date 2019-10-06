@@ -15,6 +15,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.baseware.helper.assertion.AsertHelper;
+import com.baseware.helper.assertion.VerificationHelper;
+import com.baseware.helper.wait.WaitHelper;
 import com.baseware.pages.LoginPage;
 import com.baseware.pages.TestAppHomePage;
 
@@ -32,6 +35,7 @@ public class LoginTest {
 
 	private WebDriver driver;
 	TestAppHomePage home_page;
+
 
 	@BeforeClass
 	public void setUp() {
@@ -62,14 +66,21 @@ public class LoginTest {
 
 		// Click the submit button
 		login_page.clickSubmitButton();
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-
+		
+	
+		
+		// Setting up some wait 
+		new WaitHelper(driver).setImplicitWait(4,TimeUnit.SECONDS);
+		
+		
+	
 		// Instantiate home page after successful login
 		home_page = PageFactory.initElements(driver, TestAppHomePage.class);
 
 		// Verify that user is on home page after successfully logging into the
 		// application
-		Assert.assertEquals(home_page.getLogoutButtonText(), "Logout");
+		new AsertHelper().verifyText(home_page.getLogoutButtonText(), "Logout");
+		//Assert.assertEquals(home_page.getLogoutButtonText(), "Logout");
 
 	}
 
@@ -80,7 +91,10 @@ public class LoginTest {
 
 		if (driver != null) {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			WebDriverWait wait = new WebDriverWait(driver, 20);
+			// Setting up some wait 
+			new WaitHelper(driver).setImplicitWait(4,TimeUnit.SECONDS);
+			
+		
 			// logout from the home page
 			home_page.clickLogoutButton();
 		}
