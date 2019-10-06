@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.baseware.testCases.LoginTest"/>
-      <class name="com.baseware.testCases.InvalidLoginTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+
+<suite name=" Suite">
+	<listeners>
+		<listener
+			class-name="com.baseware.helper.listener.ExtentListener"></listener>
+	</listeners>
+	<test name="Verify Successful Login with Valid Credentials">
+		<classes>
+			<class name="com.baseware.testCases.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="Verify Login is not successfull with invalid credentials">
+		<classes>
+			<class name="com.baseware.testCases.InvalidLoginTest"></class>
+		</classes>
+	</test>
+</suite>

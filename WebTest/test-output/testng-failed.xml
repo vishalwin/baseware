@@ -6,7 +6,12 @@
       <class name="com.baseware.testCases.LoginTest">
         <methods>
           <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
           <include name="verifyLogin" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.baseware.testCases.LoginTest -->

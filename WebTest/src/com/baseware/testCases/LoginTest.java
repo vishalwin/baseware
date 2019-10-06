@@ -41,7 +41,7 @@ public class LoginTest extends TestBase {
 	@BeforeClass
 	public void setUp() {
 		System.out.println("*******************");
-		System.out.println("launching Web Browser");
+		System.out.println("Verify Successful Login with Valid Credentials");
 
 		driver = BrowserFactory.startBrowser("chrome", url);
 	}
@@ -80,7 +80,7 @@ public class LoginTest extends TestBase {
 
 		// Verify that user is on home page after successfully logging into the
 		// application
-		//new AsertHelper().verifyText(home_page.getLogoutButtonText(), "Logodfdfdut1");
+		
 		Assert.assertEquals(home_page.getLogoutButtonText(), "Logout");
 
 	}

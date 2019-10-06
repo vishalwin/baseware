@@ -30,7 +30,7 @@ public class InvalidLoginTest extends TestBase {
 	@BeforeClass
 	public void setUp() {
 		System.out.println("*******************");
-		System.out.println("launching Web Browser");
+		System.out.println("Verify Login is not successfull with invalid credentials");
 		driver = BrowserFactory.startBrowser("chrome", url);
 	}
 
